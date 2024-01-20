@@ -1,0 +1,59 @@
+.header{
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+.background{
+    width: 300px;
+    display: block;
+    margin: auto}
+body{
+    margin: 0;
+    padding: 0
+    background-image: ;
+    background-color: aquamarine;
+}
+.container{
+    text-align: center;
+}
+.Btn{
+    border: 10px black;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    margin: 10px;
+    color: aquamarine;
+    background-color: black;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.btn1:hover,.btn2:hover,.btn3:hover{
+    color: black;
+}
+
+.Btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: aquamarine;
+    transition: 0.8s;
+    z-index: auto;
+
+}
+
+.btn1::before,.btn2::before,.btn3::before{
+    top: 0;
+    border-radius: 25px;
+    bottom: 0%;
+}
+
+.btn1:hover::before,.btn2:hover::before,.btn3:hover::before{
+    height: 180%;
+}
